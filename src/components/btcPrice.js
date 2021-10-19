@@ -16,9 +16,11 @@ class btcPrice extends React.Component {
 
     renderPrice() {
         if (this.props.btcPrice != null) {
+            var btcPrice = this.props.btcPrice.amount;
+            var formattedPrice = (btcPrice).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
             return (
                 <div className="price">
-                    <i className="fab fa-bitcoin"></i> ${this.props.btcPrice.amount}
+                    <i className="fab fa-bitcoin"></i> ${formattedPrice}
                 </div>
             )
         } else {
