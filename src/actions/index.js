@@ -1,4 +1,5 @@
 import coinbase from '../apis/coinbase';
+import github from '../apis/github';
 
 export const fetchBTCPrice = () => async (dispatch, getState) => {
     const response = await coinbase.get(`/btc-USD/spot`)
@@ -16,4 +17,15 @@ export const selectJob = job => {
         type: 'JOB_SELECTED',
         payload: job
     };
+};
+
+export const fetchProjects = () => async (dispatch, getState) => {
+    const response = await github.get('/slopeside-graham/repos')
+
+    dispatch(
+        {
+            type: 'FETCH_PROJECTS',
+            payload: response.data
+        }
+    )
 };

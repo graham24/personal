@@ -20,7 +20,10 @@ const Header = () => {
                     <h2>Web Developer</h2>
                 </div>
                 {/*<Link to="/about">About</Link>*/}
-                <Link to="/experience">Work Experience</Link>
+                <ul className="main-menu" >
+                    <li><Link to="/experience">Work Experience</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                </ul>
                 <div className="contact-info">
                     <h3 className="email">
                         <button>
