@@ -72,9 +72,17 @@ const projectsReducer = (projects = [], action) => {
     }
 };
 
+const selectedProjectReducer = (selectedProject = null, action) => {
+    if (action.type === 'FETCH_PROJECTREADME') {
+        return action.payload
+    }
+    return selectedProject
+}
+
 export default combineReducers({
     jobs: jobsReducer,
     selectedJob: selectedJobReducer,
     btcPrice: btcPriceReducer,
-    projects: projectsReducer
+    projects: projectsReducer,
+    selectedProject: selectedProjectReducer
 })

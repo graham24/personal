@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchProjects } from "../actions";
+import { fetchProjectREADME } from "../actions";
 
 class projectList extends React.Component {
     componentDidMount() {
@@ -11,7 +12,7 @@ class projectList extends React.Component {
         return this.props.projects.map((project) => {
             return (
                 <div className="single-project" key={project.id}>
-                    <div><a href={project.html_url} target="_blank">{project.name}</a></div>
+                    <div><h3 onClick={() => this.props.fetchProjectREADME(project.name, 'main')}>{project.name}</h3></div>
                     <div className="description">{project.description}</div>
                 </div>
             );
@@ -30,4 +31,4 @@ const mapStateToProps = (state) => {
     return { projects: state.projects }
 };
 
-export default connect(mapStateToProps, { fetchProjects })(projectList);
+export default connect(mapStateToProps, { fetchProjects, fetchProjectREADME })(projectList);

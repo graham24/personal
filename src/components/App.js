@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import jobList from './jobList';
 import jobDetail from './jobDetail';
 import projectList from './gitHubProjects';
+import projectDetail from './gitHubProjectDetail';
 
 import Home from './parts/Home';
 
@@ -20,6 +21,7 @@ const App = () => {
                         <Route path="/experience" exact component={jobList} />
                         <Route path="/experience" exact component={jobDetail} />
                         <Route path="/projects" exact component={projectList} />
+                        <Route path="/projects" exact component={projectDetail} />
                     </div>
                 </div>
             </BrowserRouter>
