@@ -10,7 +10,7 @@ const ProjectDetail = ({ selectedProject }) => {
         return { __html: selectedProject };
     }
 
-    return <div dangerouslySetInnerHTML={displayHTML()} />
+    return <div className="project-details" dangerouslySetInnerHTML={displayHTML()} />
 
 }
 

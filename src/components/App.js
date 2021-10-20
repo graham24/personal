@@ -17,7 +17,7 @@ const App = () => {
                 <Header />
                 <div className="content-area">
                     <Route path="/" exact component={Home} />
-                    <div className="jobs">
+                    <div className="content">
                         <Route path="/experience" exact component={jobList} />
                         <Route path="/experience" exact component={jobDetail} />
                         <Route path="/projects" exact component={projectList} />

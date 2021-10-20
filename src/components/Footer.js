@@ -5,7 +5,6 @@ const Footer = () => {
     return (
         <footer>
             <BTCPrice />
-            Footer
         </footer>
     )
 }
