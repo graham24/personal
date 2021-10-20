@@ -12,7 +12,7 @@ class projectList extends React.Component {
         return this.props.projects.map((project) => {
             return (
                 <div className="single-project" key={project.id}>
-                    <div><h3 onClick={() => this.props.fetchProjectREADME(project.name, 'main')}>{project.name}</h3></div>
+                    <div className="project-name"><h3 onClick={() => this.props.fetchProjectREADME(project.name, project.default_branch)}>{project.name}</h3></div>
                     <div className="description">{project.description}</div>
                 </div>
             );
