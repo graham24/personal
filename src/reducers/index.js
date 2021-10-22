@@ -72,7 +72,7 @@ const projectsReducer = (projects = [], action) => {
     }
 };
 
-const selectedProjectReducer = (selectedProject = null, action) => {
+const selectedProjectReducer = (selectedProject = [], action) => {
     if (action.type === 'FETCH_PROJECTREADME') {
         return action.payload
     }

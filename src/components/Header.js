@@ -21,6 +21,7 @@ const Header = () => {
                 </div>
                 {/*<Link to="/about">About</Link>*/}
                 <ul className="main-menu" >
+                    <li><Link to="/about">About Me</Link></li>
                     <li><Link to="/experience">Work Experience</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
                 </ul>

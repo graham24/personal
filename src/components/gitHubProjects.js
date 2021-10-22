@@ -5,7 +5,9 @@ import { fetchProjectREADME } from "../actions";
 
 class projectList extends React.Component {
     componentDidMount() {
-        this.props.fetchProjects();
+       const projects =  this.props.fetchProjects();
+       console.log(projects);
+       this.props.fetchProjectREADME(projects[0].name, projects[0].default_branch)
     }
 
     renderList() {

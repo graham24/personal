@@ -6,6 +6,7 @@ import projectList from './gitHubProjects';
 import projectDetail from './gitHubProjectDetail';
 
 import Home from './parts/Home';
+import About from './parts/About';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -16,12 +17,15 @@ const App = () => {
             <BrowserRouter>
                 <Header />
                 <div className="content-area">
-                    <Route path="/" exact component={Home} />
                     <div className="content">
-                        <Route path="/experience" exact component={jobList} />
-                        <Route path="/experience" exact component={jobDetail} />
-                        <Route path="/projects" exact component={projectList} />
-                        <Route path="/projects" exact component={projectDetail} />
+                        <Route path="/" exact component={Home} />
+                        <Route path="/about" exact component={About} />
+                        <div className="two-column">
+                            <Route path="/experience" exact component={jobList} />
+                            <Route path="/experience" exact component={jobDetail} />
+                            <Route path="/projects" exact component={projectList} />
+                            <Route path="/projects" exact component={projectDetail} />
+                        </div>
                     </div>
                 </div>
             </BrowserRouter>
