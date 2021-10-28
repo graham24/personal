@@ -22,12 +22,15 @@ p, body {
     grid-template-columns: auto;
     height: 100vh;
 }
+
 h1 {
     font-size: 2em;
 }
+
 h2 {
     font-size: 1.5em;
 }
+
 body, a {
     font-size: 1em;
 }
@@ -51,6 +54,20 @@ body, a {
     }
 }
 
+.two-column {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100% 100%;
+}
+
+.job-details {
+    display: none;
+}
+
+.job .job-details {
+    display: block;
+}
+
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 
 @media (min-width: 576px) {
@@ -62,6 +79,15 @@ body, a {
         padding: 20px;
         display: flex;
         align-items: end;
+    }
+    .two-column {
+        grid-template-columns: 40% 60%;
+    }
+    .job .job-details {
+        display: none;
+    }
+    .job-details {
+        display: block;
     }
 }
 
@@ -105,6 +131,7 @@ body {
     list-style: none;
     padding-left: 0px;
 }
+
 .content-area {
     padding: 20px;
     height: 100%;
@@ -116,14 +143,6 @@ body {
     display: flex;
     align-items: center;
 }
-
-.two-column {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-
-
 
 header {
     grid-area: 1 / 1 / 1 / 1;
@@ -163,4 +182,16 @@ img {
 
 .bold {
     font-weight: 700;
+}
+
+.job:hover {
+    cursor: pointer;
+}
+
+.job-title {
+    font-size: 90%;
+}
+
+.job-dates {
+    font-size: 80%;
 }

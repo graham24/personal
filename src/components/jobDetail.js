@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 const JobDetail = ({ selectedJob }) => {
     if (!selectedJob) {
-        return <div className="jobDetails"></div>;
+        return <div className="job-details"></div>;
     }
     var duties = '';
     if (selectedJob.description) {
@@ -13,8 +13,9 @@ const JobDetail = ({ selectedJob }) => {
     }
 
     return (
-        <div className="jobDetails">
-            <h3>Job Duties</h3>
+        console.log(),
+        <div className="job-details">
+            <h4>Job Duties</h4>
             <ul>
                 {duties}
             </ul>
