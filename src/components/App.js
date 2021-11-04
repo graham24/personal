@@ -13,18 +13,16 @@ import Footer from './Footer';
 
 const App = () => {
     return (
-        <div id="main-content">
+        <div id="main-content" className="dark:text-white bg-white dark:bg-gray-800 grid grid-cols-1 md:grid-cols-medium lg:grid-cols-large xl:grid-cols-xl h-screen w-screen max-h-screen max-w-screen">
             <BrowserRouter>
                 <Header />
-                <div className="content-area">
-                    <div className="content">
-                        <Route path="/" exact component={Home} />
-                        <Route path="/about" exact component={About} />
-                        <div className="two-column">
+                <div className="h-auto overflow-auto max-h-auto flex pt-40">
+                    <Route path="/" exact component={Home} />
+                    <Route path="/about" exact component={About} />
+                    <div className="h-auto flex-grow">
+                        <div className="">
                             <Route path="/experience" exact component={jobList} />
-                            <Route path="/experience" exact component={jobDetail} />
                             <Route path="/projects" exact component={projectList} />
-                            <Route path="/projects" exact component={projectDetail} />
                         </div>
                     </div>
                 </div>

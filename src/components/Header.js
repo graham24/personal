@@ -8,10 +8,10 @@ import headshot from '../media/Headshot.jpg'
 
 const Header = () => {
     return (
-        <header>
-            <div id="my-info">
+        <header className="p-4">
+            <div id="my-info" className="text-center">
                 <div className="headshot">
-                    <Link to="/"><img src={headshot} alt="Graham Holland Headshot" /></Link>
+                    <Link to="/"><img className="w-32 lg:w-48 m-auto rounded-full" src={headshot} alt="Graham Holland Headshot" /></Link>
                 </div>
                 <div className="name">
                     <h1>Graham Holland</h1>

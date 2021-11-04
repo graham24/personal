@@ -1,21 +1,27 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const JobDetail = ({ selectedJob }) => {
-    if (!selectedJob) {
+const JobDetail = (props) => {
+
+    if (!props.selectedJob) {
         return <div className="job-details"></div>;
     }
     var duties = '';
-    if (selectedJob.description) {
-        duties = selectedJob.description.map(function (d, idx) {
-            return (<li key={idx}>{d}</li>)
-        })
+
+    if (props.selectedJob.description) {
+
+        if (props.selectedJob.company == props.company) {
+            duties = props.selectedJob.description.map(function (d, idx) {
+                return (<li key={idx}>{d}</li>)
+            })
+        }
+    } else {
+        return '';
     }
 
     return (
         console.log(),
         <div className="job-details">
-            <h4>Job Duties</h4>
             <ul>
                 {duties}
             </ul>

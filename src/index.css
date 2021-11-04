@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+  }
 /*
 Import Lall fonts first
 */
@@ -15,7 +27,7 @@ p, body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* `xs` returns only a ruleset and no media query */
+/*
 
 #main-content {
     display: grid;
@@ -68,7 +80,7 @@ body, a {
     display: block;
 }
 
-/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+
 
 @media (min-width: 576px) {
     #main-content {
@@ -91,7 +103,7 @@ body, a {
     }
 }
 
-/* `md` applies to small devices (landscape phones, less than 768px) */
+
 
 @media (min-width: 768px) {
     #main-content {
@@ -99,15 +111,13 @@ body, a {
     }
 }
 
-/* `lg` applies to medium devices (tablets, less than 992px) */
-
 @media (min-width: 992px) {
     #main-content {
         grid-template-columns: 20% 80%;
     }
 }
 
-/* `xl` applies to large devices (desktops, less than 1200px) */
+
 
 @media (min-width: 1200px) {
     #main-content {
@@ -115,7 +125,7 @@ body, a {
     }
 }
 
-/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
 
 @media (min-width: 1440px) {
     #main-content {
@@ -195,3 +205,4 @@ img {
 .job-dates {
     font-size: 80%;
 }
+*/
