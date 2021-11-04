@@ -14,7 +14,9 @@
        },
      },
      variants: {
-       extend: {},
+       extend: {
+         textColor: ['active']
+       },
      },
      plugins: [],
    }

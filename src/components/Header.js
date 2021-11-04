@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie-player';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import emailIcon from '../media/animations/72126-email-verification.json';
 
@@ -11,7 +11,7 @@ const Header = () => {
         <header className="p-4">
             <div id="my-info" className="text-center">
                 <div className="headshot">
-                    <Link to="/"><img className="w-32 lg:w-48 m-auto rounded-full" src={headshot} alt="Graham Holland Headshot" /></Link>
+                    <NavLink to="/"><img className="w-32 lg:w-48 m-auto rounded-full" src={headshot} alt="Graham Holland Headshot" /></NavLink>
                 </div>
                 <div className="name">
                     <h1>Graham Holland</h1>
@@ -20,10 +20,10 @@ const Header = () => {
                     <h2>Web Developer</h2>
                 </div>
                 {/*<Link to="/about">About</Link>*/}
-                <ul className="p-4 flex main-menu justify-between md:block" >
-                    <li className="mr-6"><Link to="/about" className="text-blue-500 hover:text-blue-800">About Me</Link></li>
-                    <li className="mr-6"><Link to="/experience" className="text-blue-500 hover:text-blue-800">Work Experience</Link></li>
-                    <li className="mr-6"><Link to="/projects" className="text-blue-500 hover:text-blue-800">Projects</Link></li>
+                <ul className="p-4 flex main-menu md:block" >
+                    <li className="flex-1"><NavLink activeClassName="active:text-red-200" to="/about" className="">About Me</NavLink></li>
+                    <li className="flex-1"><NavLink to="/experience" className="">Work Experience</NavLink></li>
+                    <li className="flex-1"><NavLink to="/projects" className="">Projects</NavLink></li>
                 </ul>
                 <div className="contact-info">
                     <h3 className="email">
