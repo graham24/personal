@@ -20,10 +20,10 @@ const Header = () => {
                     <h2>Web Developer</h2>
                 </div>
                 {/*<Link to="/about">About</Link>*/}
-                <ul className="main-menu" >
-                    <li><Link to="/about">About Me</Link></li>
-                    <li><Link to="/experience">Work Experience</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
+                <ul className="p-4 flex main-menu justify-between md:block" >
+                    <li className="mr-6"><Link to="/about" className="text-blue-500 hover:text-blue-800">About Me</Link></li>
+                    <li className="mr-6"><Link to="/experience" className="text-blue-500 hover:text-blue-800">Work Experience</Link></li>
+                    <li className="mr-6"><Link to="/projects" className="text-blue-500 hover:text-blue-800">Projects</Link></li>
                 </ul>
                 <div className="contact-info">
                     <h3 className="email">
