@@ -10,7 +10,7 @@ const JobDetail = (props) => {
 
     if (props.selectedJob.description) {
 
-        if (props.selectedJob.company == props.company) {
+        if (props.selectedJob.company === props.company) {
             duties = props.selectedJob.description.map(function (d, idx) {
                 return (<li key={idx}>{d}</li>)
             })

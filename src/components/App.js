@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import jobList from './jobList';
-import jobDetail from './jobDetail';
+// import jobDetail from './jobDetail';
 import projectList from './gitHubProjects';
-import projectDetail from './gitHubProjectDetail';
+// import projectDetail from './gitHubProjectDetail';
 
 import Home from './parts/Home';
 import About from './parts/About';
