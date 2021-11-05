@@ -1,17 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const ProjectDetail = ({ selectedProject }) => {
-    if (!selectedProject) {
+const ProjectDetail = (props) => {
+    if (!props.selectedProject) {
         return <div></div>;
+    } else {
+
+        function displayHTML() {
+            return { __html: props.selectedProject.readme };
+        }
+
+        if (props.projectid === props.selectedProject.id) {
+            return <div className="project-details" dangerouslySetInnerHTML={displayHTML()} />
+        } else {
+            return '';
+        }
     }
-
-    function displayHTML() {
-        return { __html: selectedProject };
-    }
-
-    return <div className="project-details" dangerouslySetInnerHTML={displayHTML()} />
-
 }
 
 const mapStateToProps = (state) => {

@@ -19,12 +19,8 @@ const App = () => {
                 <div className="h-auto overflow-auto max-h-auto flex md:pt-40">
                     <Route path="/" exact component={Home} />
                     <Route path="/about" exact component={About} />
-                    <div className="h-auto flex-grow">
-                        <div className="">
-                            <Route path="/experience" exact component={jobList} />
-                            <Route path="/projects" exact component={projectList} />
-                        </div>
-                    </div>
+                    <Route path="/experience" exact component={jobList} />
+                    <Route path="/projects" exact component={projectList} />
                 </div>
             </BrowserRouter>
             <Footer />

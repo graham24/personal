@@ -30,14 +30,17 @@ export const fetchProjects = () => async (dispatch, getState) => {
     )
 };
 
-export const fetchProjectREADME = (repo, branch) => async (dispatch, getState) => {
+export const fetchProjectREADME = (repo, branch, id) => async (dispatch, getState) => {
     const response = await readmeGet.get('/graham24/' + repo + '/' + branch + '/README.md')
 
     if (response) {
         dispatch(
             {
                 type: 'FETCH_PROJECTREADME',
-                payload: response.data
+                payload: {
+                    readme: response.data,
+                    id: id
+                }
             }
         )
     }

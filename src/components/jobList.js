@@ -12,9 +12,9 @@ class jobList extends React.Component {
     renderList() {
         return this.props.jobs.map((job) => {
             return (
-                <div>
+                <div key={job.company}>
                     <div className="md:grid md:grid-cols-third p-4">
-                        <div className="job cursor-pointer pt-4 md:p-4" key={job.company} onClick={() => this.props.selectJob(job)}>
+                        <div className="job cursor-pointer pt-4 md:p-4" onClick={() => this.props.selectJob(job)}>
                             <span className="company-name">{job.company}</span><br />
                             <span className="job-title">{job.title}</span><br />
                             <span className="job-dates">{job.startDate} - {job.endDate}</span><br />
@@ -30,9 +30,11 @@ class jobList extends React.Component {
     }
     render() {
         return (
-            <div className="p-4">
+            <div className="p-4 flex-grow">
                 <h2>Work Experience</h2>
-                {this.renderList()}
+                <div className="h-auto flex-grow">
+                    {this.renderList()}
+                </div>
             </div>
         );
     }
