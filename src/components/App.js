@@ -5,6 +5,7 @@ import jobList from './jobList';
 import projectList from './gitHubProjects';
 // import projectDetail from './gitHubProjectDetail';
 
+
 import Home from './parts/Home';
 import About from './parts/About';
 
