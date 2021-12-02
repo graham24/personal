@@ -12,7 +12,7 @@ class jobList extends React.Component {
     renderList() {
         return this.props.jobs.map((job) => {
             return (
-                <div key={job.company}>
+                <div key={job.company} className="hover:bg-gray-50 hover:bg-opacity-5 rounded-md hover:cursor-pointer">
                     <div className="md:grid md:grid-cols-third p-4">
                         <div className="job cursor-pointer pt-4 md:p-4" onClick={() => this.props.selectJob(job)}>
                             <span className="company-name">{job.company}</span><br />
@@ -23,7 +23,6 @@ class jobList extends React.Component {
                             <JobDetail company={job.company} />
                         </div>
                     </div>
-                    <hr />
                 </div>
             );
         });

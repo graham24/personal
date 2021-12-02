@@ -16,7 +16,7 @@ class projectList extends React.Component {
     renderList() {
         return this.props.projects.map((project) => {
             return (
-                <div key={project.id} onClick={() => this.props.fetchProjectREADME(project.name, project.default_branch, project.id)} className="hover:bg-gray-50 hover:bg-opacity-5 rounded-md">
+                <div key={project.id} onClick={() => this.props.fetchProjectREADME(project.name, project.default_branch, project.id)} className="hover:bg-gray-50 hover:bg-opacity-5 rounded-md hover:cursor-pointer">
                     <div className="md:grid md:grid-cols-third p-4">
                         <div className="single-project cursor-pointer pt-4 md:p-4">
                             <div className="project-name"><h3>{project.name}</h3></div>
