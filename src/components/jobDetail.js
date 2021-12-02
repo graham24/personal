@@ -22,7 +22,7 @@ const JobDetail = (props) => {
     return (
         console.log(),
         <div className="job-details">
-            <ul>
+            <ul className="list-disc">
                 {duties}
             </ul>
         </div>
