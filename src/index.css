@@ -1,31 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Raleway&family=Roboto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+
+    p {
+        margin-bottom: 20px;
+    }
+
     h1 {
-      @apply text-2xl;
+        font-family: 'Quicksand', sans-serif;
     }
-    h2 {
-      @apply text-xl;
+
+    h2, h3, h4, h5, h6 {
+        font-family: 'Raleway', sans-serif;
     }
-  }
+
+    p, body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        color: orange;
+    }
+}
+
 /*
 Import Lall fonts first
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Raleway&family=Roboto&display=swap');
-h1 {
-    font-family: 'Quicksand', sans-serif;
-}
 
-h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
-}
-
-p, body {
-    font-family: 'Roboto', sans-serif;
-}
 
 /*
 
@@ -206,6 +212,3 @@ img {
     font-size: 80%;
 }
 */
-p {
-    margin-bottom: 20px;
-}
