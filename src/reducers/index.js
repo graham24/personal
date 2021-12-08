@@ -16,7 +16,8 @@ const jobsReducer = () => {
                 'Build and implement custom plugins for various needs, with updates and code control through GitHub.',
                 'High level understanding of Office 365 and G Suite.Accomplishing multiple successful deployments and migrations.',
                 'IT support, including network configuration, hardware setup and software implementation.'
-            ]
+            ],
+            url: 'https://slopesidetechnology.com'
         },
         {
             company: 'Alpine Property Management',
@@ -26,7 +27,8 @@ const jobsReducer = () => {
             endDate: 'June 2017',
             description: [
                 'General property care. Including but not limited to snow shoveling, roof maintenance, small appliance repair, housekeeping.'
-            ]
+            ],
+            url: 'https://www.alpinepropertycrestedbutte.com/'
         },
         {
             company: 'Dakine Inc.',
@@ -41,7 +43,8 @@ const jobsReducer = () => {
                 'Advanced excel report generation and implementation using VBA Code in Excel.',
                 'Work with other departments to ensure all information distributed to customers.'
 
-            ]
+            ],
+            url: 'https://www.dakine.com/'
         }
     ];
 };
