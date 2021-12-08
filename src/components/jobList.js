@@ -9,7 +9,7 @@ class jobList extends React.Component {
     }
 
     componentDidMount() {
-        var jobs = this.props.jobs;
+       // var jobs = this.props.jobs;
       //  this.props.selectJob(jobs[0]);
     }
     clickJob(job) {
@@ -28,7 +28,7 @@ class jobList extends React.Component {
                             <div className="company-name"><h3>{job.company}</h3></div>
                             <div className="job-title"><h4>{job.title}</h4></div>
                             <div className="job-dates"><p className="mb-0">{job.startDate} - {job.endDate}</p></div>
-                            <div><a className="text-yellow-600" href={job.url} target="_blank">{job.url}</a></div>
+                            <div><a className="text-yellow-600" href={job.url} target="_blank" rel="noreferrer" >{job.url}</a></div>
                         </div>
                         <div className="pt-4">
                             <JobDetail company={job.company} />
