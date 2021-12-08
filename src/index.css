@@ -5,11 +5,6 @@
 @tailwind utilities;
 
 @layer base {
-
-    p {
-        margin-bottom: 20px;
-    }
-
     h1 {
         font-family: 'Quicksand', sans-serif;
     }
@@ -22,8 +17,34 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    a {
-        color: orange;
+    a {}
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: .8em;
+    }
+
+    h6 {
+        font-size: .6em;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: .9em;
     }
 }
 

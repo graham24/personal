@@ -30,8 +30,8 @@ class projectList extends React.Component {
                     <div className="md:grid md:grid-cols-third p-4">
                         <div className="single-project cursor-pointer pt-4 md:p-4">
                             <div className="project-name"><h3>{project.name}</h3></div>
-                            <div className="description">{project.description}</div>
-                            <div className=""><a href={project.html_url} target="_blank">{project.html_url}</a></div>
+                            <div className="description"><h4>{project.description}</h4></div>
+                            <div className="project-url"><a href={project.html_url} className="text-yellow-600" target="_blank"><h4>{project.html_url}</h4></a></div>
                         </div>
                         <div className="pt-4">
                             <ProjectDetail projectid={project.id} />
