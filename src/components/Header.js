@@ -23,7 +23,8 @@ const Header = () => {
                 <ul className="p-4 flex main-menu md:block" >
                     <li className="flex-1"><NavLink activeClassName="active:text-red-200" to="/about" className="">About Me</NavLink></li>
                     <li className="flex-1"><NavLink to="/experience" className="">Work Experience</NavLink></li>
-                    <li className="flex-1"><NavLink to="/projects" className="">Projects</NavLink></li>
+                    <li className="flex-1"><NavLink to="/personal-projects" className="">Personal Projects</NavLink></li>
+                    <li className="flex-1"><NavLink to="/work-projects" className="">Work Projects</NavLink></li>
                 </ul>
                 <div className="contact-info">
                     <h3 className="email">

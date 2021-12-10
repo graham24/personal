@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import jobList from './jobList';
 // import jobDetail from './jobDetail';
-import projectList from './gitHubProjects';
+import personalProjectList from './gitHubPersonalProjects';
+import workProjectList from './gitHubWorkProjects';
 // import projectDetail from './gitHubProjectDetail';
 
 
@@ -21,7 +22,8 @@ const App = () => {
                     <Route path="/" exact component={Home} />
                     <Route path="/about" exact component={About} />
                     <Route path="/experience" exact component={jobList} />
-                    <Route path="/projects" exact component={projectList} />
+                    <Route path="/personal-projects" exact component={personalProjectList} />
+                    <Route path="/work-projects" exact component={workProjectList} />
                 </div>
             </BrowserRouter>
             <Footer />

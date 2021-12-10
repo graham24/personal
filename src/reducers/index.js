@@ -66,12 +66,21 @@ const btcPriceReducer = (btcprice = null, action) => {
     }
 };
 
-const projectsReducer = (projects = [], action) => {
+const personalProjectsReducer = (personalProjects = [], action) => {
     switch (action.type) {
-        case 'FETCH_PROJECTS':
+        case 'FETCH_PERSONAL_PROJECTS':
             return action.payload;
         default:
-            return projects;
+            return personalProjects;
+    }
+};
+
+const workProjectsReducer = (workProjects = [], action) => {
+    switch (action.type) {
+        case 'FETCH_WORK_PROJECTS':
+            return action.payload;
+        default:
+            return workProjects;
     }
 };
 
@@ -86,6 +95,7 @@ export default combineReducers({
     jobs: jobsReducer,
     selectedJob: selectedJobReducer,
     btcPrice: btcPriceReducer,
-    projects: projectsReducer,
+    personalProjects: personalProjectsReducer,
+    workProjects: workProjectsReducer,
     selectedProject: selectedProjectReducer
 })

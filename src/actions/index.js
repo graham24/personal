@@ -19,19 +19,30 @@ export const selectJob = job => {
     };
 };
 
-export const fetchProjects = () => async (dispatch, getState) => {
+export const fetchPersonalProjects = () => async (dispatch, getState) => {
     const response = await userGet.get('/graham24/repos')
 
     dispatch(
         {
-            type: 'FETCH_PROJECTS',
+            type: 'FETCH_PERSONAL_PROJECTS',
             payload: response.data
         }
     )
 };
 
-export const fetchProjectREADME = (repo, branch, id) => async (dispatch, getState) => {
-    const response = await readmeGet.get('/graham24/' + repo + '/' + branch + '/README.md')
+export const fetchWorkProjects = () => async (dispatch, getState) => {
+    const response = await userGet.get('/slopeside-graham/repos')
+
+    dispatch(
+        {
+            type: 'FETCH_WORK_PROJECTS',
+            payload: response.data
+        }
+    )
+};
+
+export const fetchProjectREADME = (user, repo, branch, id) => async (dispatch, getState) => {
+    const response = await readmeGet.get('/' + user + '/' + repo + '/' + branch + '/README.md')
 
     if (response) {
         dispatch(
