@@ -20,7 +20,7 @@ const App = () => {
                 <Header />
                 <div className="h-auto overflow-auto max-h-auto flex md:pt-40">
                     <Route path="/" exact component={Home} />
-                    <Route path="/about" exact component={About} />
+                    <Route path="/" exact component={About} />
                     <Route path="/experience" exact component={jobList} />
                     <Route path="/personal-projects" exact component={personalProjectList} />
                     <Route path="/work-projects" exact component={workProjectList} />

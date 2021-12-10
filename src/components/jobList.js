@@ -28,7 +28,7 @@ class jobList extends React.Component {
                             <div className="company-name"><h3>{job.company}</h3></div>
                             <div className="job-title"><h4>{job.title}</h4></div>
                             <div className="job-dates"><p className="mb-0">{job.startDate} - {job.endDate}</p></div>
-                            <div><a className="text-yellow-600" href={job.url} target="_blank" rel="noreferrer" ><h4>{job.url}</h4></a></div>
+                            <div><a className="text-yellow-600 hover:underline" href={job.url} target="_blank" rel="noreferrer" ><h4>{job.url}</h4></a></div>
                         </div>
                         <div className="pt-4">
                             <JobDetail company={job.company} />

@@ -27,7 +27,7 @@ class personalProjectList extends React.Component {
                         <div className="single-project cursor-pointer pt-4 md:p-4">
                             <div className="project-name"><h3>{personalProject.name}</h3></div>
                             <div className="description"><h4>{personalProject.description}</h4></div>
-                            <div className="project-url"><a href={personalProject.html_url} className="text-yellow-600" target="_blank" rel="noreferrer"><h4>{personalProject.html_url}</h4></a></div>
+                            <div className="project-url"><a href={personalProject.html_url} className="text-yellow-600 hover:underline" target="_blank" rel="noreferrer"><h4>{personalProject.html_url}</h4></a></div>
                         </div>
                         <div className="pt-4">
                             <ProjectDetail projectid={personalProject.id} />

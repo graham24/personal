@@ -21,14 +21,13 @@ const Header = () => {
                 </div>
                 {/*<Link to="/about">About</Link>*/}
                 <ul className="p-4 flex main-menu md:block" >
-                    <li className="flex-1"><NavLink activeClassName="active:text-red-200" to="/about" className="">About Me</NavLink></li>
-                    <li className="flex-1"><NavLink to="/experience" className="">Work Experience</NavLink></li>
-                    <li className="flex-1"><NavLink to="/personal-projects" className="">Personal Projects</NavLink></li>
-                    <li className="flex-1"><NavLink to="/work-projects" className="">Work Projects</NavLink></li>
+                    <li className="flex-1"><NavLink activeClassName="text-yellow-600" to="/experience" className="hover:underline">Work Experience</NavLink></li>
+                    <li className="flex-1"><NavLink activeClassName="text-yellow-600" to="/personal-projects" className="hover:underline">Personal Projects</NavLink></li>
+                    <li className="flex-1"><NavLink activeClassName="text-yellow-600" to="/work-projects" className="hover:underline">Work Projects</NavLink></li>
                 </ul>
                 <div className="contact-info">
                     <h3 className="email">
-                        <button>
+                        <button classNmae="flex-auto">
                             <a href="mailto:gdholland01@gmail.com">
                                 <Lottie
                                     loop
@@ -36,7 +35,7 @@ const Header = () => {
                                     play
                                     style={{ width: 'auto', height: 50, display: 'inline-block' }}
                                 />
-                                <div> Email Me</div>
+                                Email Me
                             </a>
                         </button>
                     </h3>
