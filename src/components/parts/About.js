@@ -19,7 +19,7 @@ const About = () => {
                 <p>
                     I have leared a variety of technical skills in my work, below are some of the items I have worked on.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                     <div className="p-4">
                         <strong>Languages</strong>
                         <ul className="list-disc list-outside pl-6">
