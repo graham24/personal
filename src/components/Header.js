@@ -27,15 +27,15 @@ const Header = () => {
                 </ul>
                 <div className="contact-info">
                     <h3 className="email">
-                        <button classNmae="flex-auto">
-                            <a href="mailto:gdholland01@gmail.com">
+                        <button>
+                            <a className="flex items-center" href="mailto:gdholland01@gmail.com">
                                 <Lottie
                                     loop
                                     animationData={emailIcon}
                                     play
                                     style={{ width: 'auto', height: 50, display: 'inline-block' }}
                                 />
-                                Email Me
+                                <span> Email Me</span>
                             </a>
                         </button>
                     </h3>
