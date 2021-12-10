@@ -19,8 +19,8 @@ const About = () => {
                 <p>
                     I have leared a variety of technical skills in my work, below are some of the items I have worked on.
                 </p>
-                <div className="flex">
-                    <div className="flex-grow">
+                <div className="flex gap-4">
+                    <div className="p-4">
                         <strong>Languages</strong>
                         <ul className="list-disc list-outside pl-6">
                             <li>PHP</li>
@@ -30,7 +30,7 @@ const About = () => {
                             <li>CSS</li>
                         </ul>
                     </div>
-                    <div className="flex-grow">
+                    <div className="p-4">
                         <strong>Database Management</strong>
                         <ul className="list-disc list-outside pl-6">
                             <li>MySQL</li>
@@ -38,7 +38,7 @@ const About = () => {
                             <li>MySQL Workbench</li>
                         </ul>
                     </div>
-                    <div className="flex-grow">
+                    <div className="p-4">
                         <strong>Code</strong>
                         <ul className="list-disc list-outside pl-6">
                             <li>GitHub</li>
