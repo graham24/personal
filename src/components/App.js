@@ -7,7 +7,7 @@ import workProjectList from './gitHubWorkProjects';
 // import projectDetail from './gitHubProjectDetail';
 
 
-import Home from './parts/Home';
+// import Home from './parts/Home';
 import About from './parts/About';
 
 import Header from './Header';
