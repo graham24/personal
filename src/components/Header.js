@@ -11,7 +11,7 @@ const Header = () => {
         <header className="p-4">
             <div id="my-info" className="text-center">
                 <div className="headshot">
-                    <NavLink to="/"><img className="w-32 lg:w-48 m-auto rounded-full" src={headshot} alt="Graham Holland Headshot" /></NavLink>
+                    <NavLink to="/"><img width="200" height="200" className="w-32 lg:w-48 m-auto rounded-full" src={headshot} alt="Graham Holland Headshot" /></NavLink>
                 </div>
                 <div className="name">
                     <h1>Graham Holland</h1>

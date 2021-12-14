@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-
 import RouteChangeTracker from './RouteChangeTracker'
 import ReactGA from 'react-ga';
 
@@ -11,9 +10,6 @@ const jobList = lazy(() => import('./jobList'));
 const personalProjectList = lazy(() => import('./gitHubPersonalProjects'));
 const workProjectList = lazy(() => import('./gitHubWorkProjects'));
 const About = lazy(() => import('./parts/About'));
-
-
-
 
 ReactGA.initialize('UA-215325150-1');
 
