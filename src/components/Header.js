@@ -1,5 +1,5 @@
 import React from 'react';
-import Lottie from 'react-lottie-player';
+// import Lottie from 'react-lottie-player';
 import { NavLink } from 'react-router-dom';
 
 import emailIcon from '../media/animations/72126-email-verification.json';
@@ -29,12 +29,14 @@ const Header = () => {
                     <h3 className="email">
                         <button>
                             <a className="flex items-center" href="mailto:gdholland01@gmail.com">
+                                {/*
                                 <Lottie
                                     loop
                                     animationData={emailIcon}
                                     play
                                     style={{ width: 'auto', height: 50, display: 'inline-block' }}
                                 />
+                                */}
                                 <span> Email Me</span>
                             </a>
                         </button>
