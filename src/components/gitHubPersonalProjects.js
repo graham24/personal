@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchPersonalProjects } from "../actions";
 import { fetchProjectREADME } from "../actions";
+import { Helmet } from 'react-helmet';
 
 import ProjectDetail from "./gitHubProjectDetail";
 
@@ -40,10 +41,15 @@ class personalProjectList extends React.Component {
 
     render() {
         return (
-            <div className="p-4 flex-grow">
-                <h2>Personal Projects</h2>
-                <div className="h-auto flex-grow">
-                    {this.renderList()}
+            <div className="w-full">
+                <Helmet>
+                    <title>Personal Projects - Graham Holland</title>
+                </Helmet>
+                <div className="p-4 flex-grow">
+                    <h1>Personal Projects</h1>
+                    <div className="h-auto flex-grow">
+                        {this.renderList()}
+                    </div>
                 </div>
             </div>
         )

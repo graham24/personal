@@ -3,14 +3,16 @@ import { connect } from 'react-redux';
 import { selectJob } from "../actions";
 import JobDetail from './jobDetail';
 
+import { Helmet } from 'react-helmet';
+
 class jobList extends React.Component {
     state = {
         activeJob: null,
     }
 
     componentDidMount() {
-       // var jobs = this.props.jobs;
-      //  this.props.selectJob(jobs[0]);
+        // var jobs = this.props.jobs;
+        //  this.props.selectJob(jobs[0]);
     }
     clickJob(job) {
         this.setState({ activeJob: job.company });
@@ -40,10 +42,15 @@ class jobList extends React.Component {
     }
     render() {
         return (
-            <div className="p-4 flex-grow">
-                <h2>Work Experience</h2>
-                <div className="h-auto flex-grow">
-                    {this.renderList()}
+            <div className="w-full">
+                <Helmet>
+                    <title>Work Experience - Graham Holland</title>
+                </Helmet>
+                <div className="p-4 flex-grow">
+                    <h1>Work Experience</h1>
+                    <div className="h-auto flex-grow">
+                        {this.renderList()}
+                    </div>
                 </div>
             </div>
         );
