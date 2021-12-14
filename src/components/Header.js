@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import emailIcon from '../media/animations/72126-email-verification.json';
 
-import headshot from '../media/Headshot.jpg'
+import headshot from '../media/Headshot-200.jpg'
 
 const Header = () => {
     return (
