@@ -37,7 +37,7 @@ const Header = () => {
                                     style={{ width: 'auto', height: 50, display: 'inline-block' }}
                                 />
                                 */}
-                                <span> Email Me</span>
+                                <span>Email Me</span>
                             </a>
                         </button>
                     </h3>
