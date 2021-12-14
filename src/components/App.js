@@ -6,6 +6,8 @@ import personalProjectList from './gitHubPersonalProjects';
 import workProjectList from './gitHubWorkProjects';
 // import projectDetail from './gitHubProjectDetail';
 
+import RouteChangeTracker from './RouteChangeTracker'
+
 
 // import Home from './parts/Home';
 import About from './parts/About';
@@ -13,9 +15,13 @@ import About from './parts/About';
 import Header from './Header';
 import Footer from './Footer';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-215325150-1');
+
 const App = () => {
     return (
         <div id="main-content" className="dark:text-white bg-white dark:bg-gray-800 grid grid-cols-1 md:grid-cols-medium lg:grid-cols-large xl:grid-cols-xl min-h-screen max-w-screen">
+            <RouteChangeTracker />
             <BrowserRouter>
                 <Header />
                 <div className="h-auto overflow-auto max-h-auto flex md:pt-40">
