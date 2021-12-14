@@ -2,7 +2,7 @@ import React from 'react';
 // import Lottie from 'react-lottie-player';
 import { NavLink } from 'react-router-dom';
 
-import emailIcon from '../media/animations/72126-email-verification.json';
+// import emailIcon from '../media/animations/72126-email-verification.json';
 
 import headshot from '../media/Headshot-200.jpg'
 
