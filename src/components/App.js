@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import RouteChangeTracker from './RouteChangeTracker'
 import ReactGA from 'react-ga';
 
-const Header = lazy(() => import('./Header'));
-const Footer = lazy(() => import('./Footer'));
+import Header from './Header';
+import Footer from './Footer';
 
 const jobList = lazy(() => import('./jobList'));
 const personalProjectList = lazy(() => import('./gitHubPersonalProjects'));
