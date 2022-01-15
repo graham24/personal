@@ -11,8 +11,9 @@ class jobList extends React.Component {
     }
 
     componentDidMount() {
-        // var jobs = this.props.jobs;
-        //  this.props.selectJob(jobs[0]);
+        var jobs = this.props.jobs;
+        this.props.selectJob(jobs[0]);
+        this.setState({ activeJob: jobs[0].company });
     }
     clickJob(job) {
         this.setState({ activeJob: job.company });
@@ -39,6 +40,7 @@ class jobList extends React.Component {
                 </div>
             );
         });
+
     }
     render() {
         return (
@@ -54,6 +56,8 @@ class jobList extends React.Component {
                 </div>
             </div>
         );
+
+
     }
 };
 

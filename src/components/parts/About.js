@@ -13,16 +13,22 @@ const About = () => {
                     <h2>I am a web developer.</h2>
                     <br />
                     <p>
-                        I have been working for the last 5 years in various aspects of technology, but mostly focused in web developemnt. I started wit IT support and basic web updates and management, but my interest in web developemnt quickly drew me into doing more full stack projects.
+                        I have been working for the last 5 years in various aspects of web development and IT support. I started with IT support and basic web updates and management, but my interest in web development quickly drew me into doing more full stack projects.
                     </p>
                     <p>
-                        Most of the projects that I have worked on are end to end, primarily written in PH and Javascript. I have experience doing database design and implementation, REST API creation and frontend displays.
+                        For most of these projects I have worked with the client to create a custom solutions for their needs. I am able to translate their needs into a functional web application. This has generally involved planning, designing and deploying the database structure, implementing a backend REST API service, and creating a front end interface for the final product. The front end interface will generally consist of an admin interface as well as an end user interface.
+                    </p>
+                    <p>
+                        During these projects I work with the client to make sure that what I am building meets their needs. I go through significant testing and quality control before finalizing, and fix any bugs or issues that may arise. As projects grow so can the requirements from the customer, and  I have been able to adapt and adjust the projects so they continue to function as requested.
+                    </p>
+                    <p>
+                        Most of the projects that I have worked on are end to end, primarily written in PHP and Javascript. I have experience doing database design and implementation, REST API creation and frontend displays.
                     </p>
                 </div>
                 <div>
                     <h3>Technical Skills</h3>
                     <p>
-                        I have leared a variety of technical skills in my work, below are some of the items I have worked on.
+                        I have learned a variety of technical skills in my work, below are some of the languages and technologies that I am proficient in. I have been using these languages and technologies for the last 5 years as a web developer. I also have a large knowledge of general website know how and IT skills.
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <div className="p-4">

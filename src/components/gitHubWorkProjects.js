@@ -13,7 +13,12 @@ class workProjectList extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchWorkProjects();
+        this.props.fetchWorkProjects().then( value => {
+            var defaultWorkProject = this.props.workProjects[0];
+            this.setState({ activeProject: defaultWorkProject.id });
+            this.props.fetchProjectREADME(defaultWorkProject.owner.login, defaultWorkProject.name, defaultWorkProject.default_branch, defaultWorkProject.id);
+
+        });
     }
     selectProject(workProject) {
         this.setState({ activeProject: workProject.id });

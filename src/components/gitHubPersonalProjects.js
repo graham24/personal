@@ -12,8 +12,14 @@ class personalProjectList extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchPersonalProjects();
+        this.props.fetchPersonalProjects().then( value => {
+            var defaultPersonalProject = this.props.personalProjects[0];
+            this.setState({ activeProject: defaultPersonalProject.id });
+            this.props.fetchProjectREADME(defaultPersonalProject.owner.login, defaultPersonalProject.name, defaultPersonalProject.default_branch, defaultPersonalProject.id);
+
+        })
     }
+
     selectProject(personalProject) {
         this.setState({ activeProject: personalProject.id });
         this.props.fetchProjectREADME(personalProject.owner.login, personalProject.name, personalProject.default_branch, personalProject.id);
