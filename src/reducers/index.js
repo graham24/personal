@@ -6,9 +6,9 @@ const jobsReducer = () => {
         {
             company: 'Slopeside Technology',
             locations: 'Crested Butte, CO',
-            title: 'Web Developer / IT Support Sepcialist',
+            title: 'Web Developer / IT Support Specialist',
             startDate: 'July 2017',
-            endDate: 'December 2021',
+            endDate: 'Present',
             description: [
                 'Successful implementation of WordPress including domain DNS, hosting, custom development, SEO and best practices.',
                 'SEO optimization of client websites using best practices.',
