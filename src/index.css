@@ -55,6 +55,11 @@
   li {
     font-size: 0.9em;
   }
+  ol {
+    list-style: decimal;
+    margin: revert;
+    padding: revert;
+  }
 }
 /*
 Import Lall fonts first
