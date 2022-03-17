@@ -8,5 +8,5 @@ For my personal website, while it is a simple website, I wanted to implement it 
 I am currently job searching, I am interested mostly in a front-end engineer job, preferably working with React. I am also interested in a full-stack job, as I have experience working with back-end technologies as well, but I prefer to work on the front-end.
 </p>
 <p>
-If you are interested in talking to me more, feel free to reach out to me via email at <a href="mailto:gdholland01@gmail.com">gdholland01@gmail.com</a> and we can talk more!
+If you are interested in talking to me more, feel free to reach out to me via email at <a href="mailto:graham@grahamhdev.com">graham@grahamhdev.com</a> and we can talk more!
 </p>
