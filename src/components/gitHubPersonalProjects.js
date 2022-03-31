@@ -34,8 +34,6 @@ class personalProjectList extends React.Component {
     );
   }
   renderList() {
-    const { activeProject } = this.state;    
-
     return this.props.personalProjects
       .sort((a, b) => (a.name > b.name ? 1 : -1))
       .map((personalProject) => {
